@@ -15,7 +15,7 @@ logger.setLevel(logging.DEBUG)
 class SessionNotInitializedError(Exception):
 
     def __init__(self):
-        super().__init__("Сессия не проинициализована")
+        super().__init__("Сессия не проинициализована. Проинициализируйте сессию методом init_session")
 
 
 class Session:
