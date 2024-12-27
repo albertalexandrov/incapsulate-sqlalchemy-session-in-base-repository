@@ -4,6 +4,7 @@ from external_lib_emulation.db import Database
 
 metadata = MetaData()
 
-# print(make_url("postgresql+asyncpg://postgres:postgres@localhost:5433/postgres"))
+# подключение к дефолтной бд приложения (если бд одна, то можно назвать просто db)
 default_db = Database("postgresql+asyncpg://postgres:postgres@localhost:5433/postgres")
+# пример подключения, если в приложении несколько бд
 # org_structure_db = Database("jdbc:postgresql+asyncpg://localhost:5433/org-structure-db")
